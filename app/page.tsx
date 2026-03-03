@@ -1,4 +1,5 @@
 import Tab from "@/components/Tab";
+import TitleBand from "@/components/TitleBand";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Tab label="En cours" />
           <Tab label="En cours" />
         </div>
+        <TitleBand />
       </div>
     </div>
   );
