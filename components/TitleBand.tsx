@@ -7,12 +7,12 @@ export default function TitleBand() {
         transform: "translate(-50%, -50%)",
         width: "70%",
         padding: "14px 20px",
-        backgroundColor: "#f5f0e8",
+        backgroundColor: "rgba(0, 0, 0, 0.6)",
         textAlign: "center",
         fontFamily: "Georgia, serif",
         fontSize: "16px",
         letterSpacing: "3px",
-        color: "#2a2a2a",
+        color: "#f5f0e8",
         border: "1px solid #d4b483",
       }}>
         Laurent Valquin — Creative Frontend Developer
