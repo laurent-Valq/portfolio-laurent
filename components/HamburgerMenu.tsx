@@ -39,9 +39,9 @@ export default function HamburgerMenu() {
           zIndex: 100,
           borderRadius: "0 0 8px 8px",
         }}>
-          Développeur frontend créatif, passionné par le design et le code. 
-          Ancien game developer sous Hayabusa Studio, je construis aujourd'hui 
-          des expériences web uniques alliant technique et créativité.
+          Creative frontend developer, passionate about design, code and game development.
+          Currently building a video game studio, I craft unique web experiences combining 
+          technical skills and creativity.
         </div>
       )}
     </div>
