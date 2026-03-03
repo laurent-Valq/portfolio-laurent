@@ -11,8 +11,14 @@ export default function Home() {
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
       }}>
-        <div style={{ position: "absolute", top: "9.7%", left: "5%" }}>
+        <div style={{ position: "absolute", top: "9.7%", left: "3.4%", display: "flex", flexDirection: "row", flexWrap: "nowrap", gap: "4px" }}>
           <Tab label="Star Wars App" active={true} />
+          <Tab label="En cours" />
+          <Tab label="En cours" />
+          <Tab label="En cours" />
+          <Tab label="En cours" />
+          <Tab label="En cours" />
+          <Tab label="En cours" />
         </div>
       </div>
     </div>
