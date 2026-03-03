@@ -1,6 +1,6 @@
 export default function TitleBand() {
     return (
-      <div style={{
+      <div className="title-band" style={{
         position: "absolute",
         top: "50%",
         left: "50%",
