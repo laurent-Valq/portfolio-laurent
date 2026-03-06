@@ -13,7 +13,7 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
       }}>
         <div className="tabs-container">
-          <Tab label="Star Wars App" active={true} />
+          <Tab label="Star Wars App" active={true} url="https://starwars-motivator.vercel.app" />
           <Tab label="In Progress" />
           <Tab label="In Progress" />
           <Tab label="In Progress" />
