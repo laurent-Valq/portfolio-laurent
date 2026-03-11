@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import Lottie from "lottie-react";
+import underConstruction from "@/data/animations/Gearslottie.json";
+
 
 export default function Tab({ label, active = false, url }: { label: string; active?: boolean; url?: string }) {
   const [hovered, setHovered] = useState(false);
@@ -20,9 +23,20 @@ export default function Tab({ label, active = false, url }: { label: string; act
         width: "150px",
         textAlign: "center",
         transition: "background-color 0.2s ease",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "6px",
       }}
     >
       {label}
+      {!active && (
+        <Lottie
+          animationData={underConstruction}
+          loop={true}
+          style={{ width: 18, height: 18, opacity: 1 }}
+        />
+      )} 
     </div>
   );
 
