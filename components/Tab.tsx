@@ -3,8 +3,11 @@ import { useState } from "react";
 import Lottie from "lottie-react";
 import underConstruction from "@/data/animations/Gearslottie.json";
 
-
-export default function Tab({ label, active = false, url }: { label: string; active?: boolean; url?: string }) {
+export default function Tab({ label, active = false, onTabClick }: { 
+  label: string; 
+  active?: boolean; 
+  onTabClick?: () => void;
+}) {
   const [hovered, setHovered] = useState(false);
 
   const content = (
@@ -40,11 +43,11 @@ export default function Tab({ label, active = false, url }: { label: string; act
     </div>
   );
 
-  if (url) {
+  if (onTabClick) {
     return (
-      <a href={url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+      <div onClick={onTabClick} style={{ cursor: "pointer" }}>
         {content}
-      </a>
+      </div>
     );
   }
 
