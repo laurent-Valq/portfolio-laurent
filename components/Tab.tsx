@@ -25,8 +25,8 @@ export default function Tab({ label, active = false, onTabClick }: {
       onMouseLeave={() => setHovered(false)}
       style={{
         padding: "8px 20px",
-        backgroundColor: active ? (hovered ? "#a8873a" : "#c9a84c") : (hovered ? "#555" : "#6b6b6b"),
-        color: "white",
+        backgroundColor: active ? (hovered ? "#bfa043" : "#d4b24f") : (hovered ? "#4c4c4c" : "#5b5b5b"),
+        color: "#eaeaea",
         cursor: "pointer",
         fontSize: "12px",
         letterSpacing: "1px",
@@ -44,7 +44,7 @@ export default function Tab({ label, active = false, onTabClick }: {
         <Lottie
           animationData={underConstruction}
           loop={true}
-          style={{ width: isSmall ? 40 : 18, height: isSmall ? 40 : 18, opacity: 1 }}
+          style={{ width: isSmall ? 40 : 24, height: isSmall ? 40 : 24, opacity: 1 }}
         />
       )} 
     </div>

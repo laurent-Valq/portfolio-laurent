@@ -15,23 +15,24 @@ export default function Home() {
   };
 
   return (
-    <div style={{ backgroundColor: "#d4c5a9", width: "100vw", height: "calc(100vh - 80px)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <div style={{ backgroundColor: "#d9cbb1", width: "100vw", height: "calc(100vh - 80px)", display: "flex", alignItems: "center", justifyContent: "center" }}>
       <div style={{ 
         position: "relative",
-        width: "60%", 
+        width: "70%", 
         height: "70vh", 
-        backgroundImage: "url('/images/document-v3.webp')",
-        backgroundSize: "100% 100%",
-        backgroundRepeat: "no-repeat",
+        background: "#1e1e1e",
+        /* backgroundImage: "url('/images/document-v3.webp')", */
+        /* backgroundSize: "100% 100%", */
+        /* backgroundRepeat: "no-repeat", */
       }}>
         <div className="tabs-container">
           <Tab label="Star Wars App" active={true} onTabClick={() => handleTabClick("https://starwars-motivator.vercel.app")} />
-          <Tab label="In Progress" />
-          <Tab label="In Progress" />
-          <Tab label="In Progress" />
-          <Tab label="In Progress" />
-          <Tab label="In Progress" />
-          <Tab label="In Progress" />
+          <Tab label="Next Project" />
+          <Tab label="Next Project" />
+          <Tab label="Next Project" />
+          <Tab label="Next Project" />
+          <Tab label="Next Project" />
+          <Tab label="Next Project" />
         </div>
         <TitleBand />
 

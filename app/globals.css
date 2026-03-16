@@ -16,12 +16,17 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 4px;
-  top: 9.3%;
-  left: 7.9%;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .tab-item {
   border-radius: 6px 6px 0 0 !important;
+  height: 50px !important;
+  white-space: nowrap;
+  font-size: 16px !important;  /* augmente cette valeur */
+  padding: 12px 28px !important; /* et le padding si besoin */
 }
 
 @media (max-width: 1800px) {

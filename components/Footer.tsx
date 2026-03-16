@@ -3,8 +3,8 @@ export default function Footer() {
       <footer style={{
         width: "100%",
         padding: "10px 20px",
-        backgroundColor: "rgba(0,0,0,0.7)",
-        color: "white",
+        backgroundColor: "#1e1e1e",
+        color: "#eaeaea",
         textAlign: "center",
         fontFamily: "Georgia, serif",
         fontSize: "12px",
