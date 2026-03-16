@@ -31,8 +31,6 @@ export default function Home() {
           <Tab label="Next Project" />
           <Tab label="Next Project" />
           <Tab label="Next Project" />
-          <Tab label="Next Project" />
-          <Tab label="Next Project" />
         </div>
         <TitleBand />
 

@@ -44,7 +44,7 @@ body {
   }
 
   .title-band {
-    opacity: 0.45;
+    opacity: 0.75;
     top: auto !important;
     bottom: 2% !important;
     transform: translateX(-50%) !important;
