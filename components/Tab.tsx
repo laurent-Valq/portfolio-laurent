@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import underConstruction from "@/data/animations/Gearslottie.json";
 
@@ -9,6 +9,14 @@ export default function Tab({ label, active = false, onTabClick }: {
   onTabClick?: () => void;
 }) {
   const [hovered, setHovered] = useState(false);
+  const [isSmall, setIsSmall] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsSmall(window.innerWidth <= 1800);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   const content = (
     <div
@@ -23,7 +31,6 @@ export default function Tab({ label, active = false, onTabClick }: {
         fontSize: "12px",
         letterSpacing: "1px",
         fontFamily: "Georgia, serif",
-        width: "150px",
         textAlign: "center",
         transition: "background-color 0.2s ease",
         display: "flex",
@@ -37,7 +44,7 @@ export default function Tab({ label, active = false, onTabClick }: {
         <Lottie
           animationData={underConstruction}
           loop={true}
-          style={{ width: 18, height: 18, opacity: 1 }}
+          style={{ width: isSmall ? 40 : 18, height: isSmall ? 40 : 18, opacity: 1 }}
         />
       )} 
     </div>

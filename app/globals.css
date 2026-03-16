@@ -6,14 +6,18 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 .tabs-container {
   position: absolute;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 4px;
-  top: 9.5%;
-  left: 3.4%;
+  top: 9.3%;
+  left: 7.9%;
 }
 
 .tab-item {
@@ -29,12 +33,15 @@
 
   .tab-item {
     border-radius: 6px 6px 8px 8px !important;
+    width: 300px !important;
+    height: 70px !important;
+    font-size: 26px !important;
   }
 
   .title-band {
-    opacity: 1;
+    opacity: 0.75;
     top: auto !important;
-    bottom: 10% !important;
+    bottom: 2% !important;
     transform: translateX(-50%) !important;
   }
 }
