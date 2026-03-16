@@ -15,7 +15,7 @@ export default function TitleBand() {
         color: "#f5f0e8",
         border: "1px solid #d4b483",
       }}>
-        Laurent Valquin — Creative Frontend Developer
+        Creative Frontend Developer
       </div>
     );
   }
