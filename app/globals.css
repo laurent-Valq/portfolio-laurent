@@ -16,7 +16,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 4px;
-  top: 2%;
+  top: 1.5%;
   left: 50%;
   transform: translateX(-50%);
 }
