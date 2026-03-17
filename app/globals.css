@@ -25,8 +25,8 @@ body {
   border-radius: 6px 6px 0 0 !important;
   height: 50px !important;
   white-space: nowrap;
-  font-size: 16px !important;  /* augmente cette valeur */
-  padding: 12px 28px !important; /* et le padding si besoin */
+  font-size: 16px !important;  
+  padding: 12px 28px !important; 
 }
 
 @media (max-width: 1800px) {
