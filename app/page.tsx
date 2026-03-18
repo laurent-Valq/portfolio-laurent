@@ -21,9 +21,12 @@ export default function Home() {
         <HeroSection />
       </section>
 
-      <section className="w-full bg-[#161616] border-t border-[#ffffff1a] px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+      <section
+        id="projects"
+        className="relative w-full bg-[#161616] border-t border-[#ffffff1a] px-4 py-3 sm:px-6 sm:py-4 lg:px-8"
+      >
         <div className="mx-auto w-full max-w-[1400px]">
-          <div className="flex flex-wrap lg:flex-nowrap">
+          <div className="flex flex-nowrap overflow-x-auto">
             <Tab
               label="Star Wars App"
               active={true}
