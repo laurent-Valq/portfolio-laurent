@@ -1,7 +1,8 @@
 "use client";
+
 import { useState } from "react";
+import HeroSection from "@/components/HeroSection";
 import Tab from "@/components/Tab";
-import TitleBand from "@/components/TitleBand";
 
 export default function Home() {
   const [animating, setAnimating] = useState(false);
@@ -15,29 +16,30 @@ export default function Home() {
   };
 
   return (
-    <div style={{ backgroundColor: "#d9cbb1", width: "100vw", height: "calc(100vh - 80px)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ 
-        position: "relative",
-        width: "70%", 
-        height: "70vh", 
-        background: "#1e1e1e",
-        /* backgroundImage: "url('/images/document-v3.webp')", */
-        /* backgroundSize: "100% 100%", */
-        /* backgroundRepeat: "no-repeat", */
-      }}>
-        <div className="tabs-container">
-          <Tab label="Star Wars App" active={true} onTabClick={() => handleTabClick("https://starwars-motivator.vercel.app")} />
-          <Tab label="Next Project" />
-          <Tab label="Next Project" />
-          <Tab label="Next Project" />
-          <Tab label="Next Project" />
-        </div>
-        <TitleBand />
+    <main className="min-h-screen bg-[#d9cbb1] flex flex-col">
+      <section className="w-full bg-[#161616]">
+        <HeroSection />
+      </section>
 
-        {animating && (
-          <div className="page-out-animation" />
-        )}
-      </div>
-    </div>
+      <section className="w-full bg-[#161616] border-t border-[#ffffff1a] px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+        <div className="mx-auto w-full max-w-[1400px]">
+          <div className="flex flex-wrap lg:flex-nowrap">
+            <Tab
+              label="Star Wars App"
+              active={true}
+              onTabClick={() =>
+                handleTabClick("https://starwars-motivator.vercel.app")
+              }
+            />
+            <Tab label="Shonen Motivator" />
+            <Tab label="Marketheroes" />
+            <Tab label="Spacescenes" />
+            <Tab label="Hayabusa" />
+          </div>
+        </div>
+
+        {animating && <div className="page-out-animation" />}
+      </section>
+    </main>
   );
 }
