@@ -9,20 +9,20 @@ export default function HeroSection() {
         >
   
           <div className="flex flex-col gap-6">
-            <p className="m-0 font-mono text-[10px] uppercase tracking-[0.22em] text-[#D4A827] md:text-[11px]">
+            <p className="m-0 font-mono text-[19px] uppercase tracking-[0.22em] text-[#D4A827] md:text-[21px]">
               ✦ Creative Frontend Developer
             </p>
   
-            <h1 className="m-0 font-serif text-6xl font-bold leading-[0.9] tracking-tight text-[#F2EAD8] sm:text-7xl md:text-8xl lg:text-[92px] xl:text-[104px]">
+            <h1 className="m-0 font-serif text-6xl font-bold leading-[0.9] tracking- text-[#F2EAD8] sm:text-7xl md:text-8xl lg:text-[92px] xl:text-[104px]">
               Laurent
               <br />
-              <span className="font-normal italic text-[#E8C653]">Valquin</span>
+              <span className="font-bold italic text-[#E8C653] tracking-tighter">Valquin</span>
             </h1>
   
-            <p className="m-0 max-w-[480px] font-mono text-sm leading-relaxed tracking-wide text-[#8d8d8d] md:text-base">
+            <p className="m-0 max-w-[480px] font-mono text-[20px] leading-relaxed tracking-wide text-[#c8c6c6]">
               Next.js · TypeScript · UI/UX
               <br />
-              <span className="text-[#a3a3a3]">
+              <span className="text-[#8d8d8d]">
                 Building interfaces where design meets performance.
               </span>
             </p>
@@ -55,12 +55,14 @@ export default function HeroSection() {
         {/* Colonne droite — décoratif */}
         <div className="hidden lg:flex lg:w-[45%] lg:flex-col lg:items-end lg:justify-between">
   
-          <div className="flex flex-col gap-3 pt-2">
-            <span className="ml-auto block h-px w-44 bg-[#5b5243]" />
-            <span className="ml-auto block h-px w-32 bg-[#5b5243]" />
-            <span className="ml-auto block h-px w-24 bg-[#5b5243]" />
-            <span className="ml-auto block h-px w-44 bg-[#5b5243]" />
-            <span className="ml-auto block h-px w-28 bg-[#5b5243]" />
+          <div className="flex flex-col gap-3 pt-2"
+          style={{paddingRight: '3rem', paddingTop: '25rem'}}
+          >
+            <span className="block h-px w-90 self-end bg-[#5b5243]" />
+            <span className="block h-px w-70 self-end bg-[#5b5243]" />
+            <span className="block h-px w-100 self-end bg-[#5b5243]" />
+            <span className="block h-px w-55 self-end bg-[#5b5243]" />
+            <span className="block h-px w-80 self-end bg-[#5b5243]" />
           </div>
   
           <div className="font-mono text-sm tracking-[0.18em] text-[#666]">
