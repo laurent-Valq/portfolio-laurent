@@ -18,9 +18,9 @@ export default function HamburgerMenu() {
           padding: "8px",
         }}
       >
-        <span style={{ display: "block", width: "22px", height: "2px", backgroundColor: "white" }} />
-        <span style={{ display: "block", width: "22px", height: "2px", backgroundColor: "white" }} />
-        <span style={{ display: "block", width: "22px", height: "2px", backgroundColor: "white" }} />
+        <span style={{ display: "block", width: "22px", height: "2px", backgroundColor: "#161616" }} />
+        <span style={{ display: "block", width: "22px", height: "2px", backgroundColor: "#161616" }} />
+        <span style={{ display: "block", width: "22px", height: "2px", backgroundColor: "#161616" }} />
       </button>
 
       {open && (

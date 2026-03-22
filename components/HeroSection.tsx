@@ -70,7 +70,7 @@ export default function HeroSection() {
           </div>
   
           <div className="font-mono text-sm tracking-[0.18em] text-[#626262]"
-          style={{paddingRight: '15rem', paddingBottom: '4rem'}}
+          style={{paddingRight: '15rem', paddingBottom: '0.5rem'}}
           >
             01 / 05
           </div>

@@ -26,7 +26,7 @@ export default function Tab({ label, active = false, onTabClick }: {
       style={{
         padding: "8px 20px",
         backgroundColor: active ? (hovered ? "#655119" : "#28200a") : (hovered ? "#2a2a2a" : "#161616"),
-        borderBottom: active ? "2px solid #D4A827" : "none",
+        borderBottom: active ? "4px solid #D4A827" : "none",
         color: "#eaeaea",
         cursor: "pointer",
         fontSize: "12px",
