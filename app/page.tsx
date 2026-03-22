@@ -16,14 +16,17 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#d9cbb1] flex flex-col">
+    <main className="bg-[#d9cbb1] flex flex-col">
       <section className="w-full bg-[#161616]">
         <HeroSection />
       </section>
 
+      <span className="block w-full h-px bg-[#ffffff1a]" />
+
       <section
         id="projects"
-        className="relative w-full bg-[#161616] border-t border-[#ffffff1a] px-4 py-3 sm:px-6 sm:py-4 lg:px-8"
+        className="relative w-full flex-1 bg-[#161616] border-t border-[#ffffff1a] px-4 py-3 sm:px-6 sm:py-4 lg:px-8"
+        style={{paddingLeft: 'clamp(1rem, 5vw, 7rem)'}}
       >
         <div className="mx-auto w-full max-w-[1400px]">
           <div className="flex flex-nowrap overflow-x-auto">
