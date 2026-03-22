@@ -33,13 +33,13 @@ export default function HeroSection() {
             >
               <a
                 href="#projects"
-                className="inline-flex min-w-[240px] h-[56px] items-center justify-center bg-[#D4A827] px-10 py-5 font-mono text-[14px] font-semibold uppercase tracking-[0.16em] text-[#1e1e1e] no-underline"
+                className="inline-flex min-w-[240px] h-[56px] items-center justify-center bg-[#D4A827] hover:bg-[#655119] hover:text-[#D4A827] px-10 py-5 font-mono text-[14px] font-semibold uppercase tracking-[0.16em] text-[#1e1e1e] no-underline"
               >
                 View Projects
               </a>
               <a
                 href="mailto:laurentvalquin81@gmail.com"
-                className="inline-flex min-w-[220px] h-[56px] items-center justify-center border border-[#ffffff33] bg-transparent px-10 py-5 font-mono text-[14px] uppercase tracking-[0.16em] text-[#F2EAD8] no-underline"
+                className="inline-flex min-w-[220px] h-[56px] items-center justify-center border border-[#ffffff33] bg-transparent hover:bg-[#2a2a2a] px-10 py-5 font-mono text-[14px] uppercase tracking-[0.16em] text-[#F2EAD8] no-underline"
               >
                 Contact Me
               </a>

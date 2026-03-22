@@ -25,7 +25,8 @@ export default function Tab({ label, active = false, onTabClick }: {
       onMouseLeave={() => setHovered(false)}
       style={{
         padding: "8px 20px",
-        backgroundColor: active ? (hovered ? "#bfa043" : "#d4b24f") : (hovered ? "#4c4c4c" : "#5b5b5b"),
+        backgroundColor: active ? (hovered ? "#655119" : "#28200a") : (hovered ? "#2a2a2a" : "#161616"),
+        borderBottom: active ? "2px solid #D4A827" : "none",
         color: "#eaeaea",
         cursor: "pointer",
         fontSize: "12px",
