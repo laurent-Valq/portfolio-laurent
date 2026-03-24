@@ -28,21 +28,24 @@ export default function HeroSection() {
               </span>
             </p>
   
-            <div
-              className="mt-20 flex flex-col items-center gap-4 sm:mt-0 sm:flex-row sm:items-start overflow-hidden"
-            >
-              <a
-                href="#projects"
-                className="inline-flex h-[56px] w-[260px] sm:min-w-[240px] items-center justify-center bg-[#D4A827] hover:bg-[#655119] hover:text-[#D4A827] px-10 font-mono text-[14px] font-semibold uppercase tracking-[0.16em] text-[#1e1e1e] no-underline"
-              >
-                View Projects
-              </a>
-              <a
-                href="mailto:laurentvalquin81@gmail.com"
-                className="inline-flex h-[56px] w-[220px] sm:min-w-[220px] items-center justify-center border border-[#ffffff33] bg-transparent hover:bg-[#2a2a2a] px-10 font-mono text-[14px] uppercase tracking-[0.16em] text-[#F2EAD8] no-underline"
-              >
-                Contact Me
-              </a>
+            <div className="mt-20 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
+              <div className="w-full flex justify-center sm:justify-start gap-4 flex-col sm:flex-row">
+                
+                <a
+                  href="#projects"
+                  className="inline-flex h-[56px] w-[260px] items-center justify-center bg-[#D4A827] hover:bg-[#655119] hover:text-[#D4A827] px-10 font-mono text-[14px] font-semibold uppercase tracking-[0.16em] text-[#1e1e1e] no-underline"
+                >
+                  View Projects
+                </a>
+            
+                <a
+                  href="mailto:laurentvalquin81@gmail.com"
+                  className="inline-flex h-[56px] w-[220px] items-center justify-center border border-[#ffffff33] bg-transparent hover:bg-[#2a2a2a] px-10 font-mono text-[14px] uppercase tracking-[0.16em] text-[#F2EAD8] no-underline"
+                >
+                  Contact Me
+                </a>
+            
+              </div>
             </div>
           </div>
   
