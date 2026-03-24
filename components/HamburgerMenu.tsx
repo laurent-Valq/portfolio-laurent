@@ -27,7 +27,7 @@ export default function HamburgerMenu() {
         <div style={{
           position: "absolute",
           top: "100%",
-          left: "0",
+          right: "0",
           width: "280px",
           backgroundColor: "rgba(0,0,0,0.85)",
           color: "#f5f0e8",
