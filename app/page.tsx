@@ -42,7 +42,6 @@ export default function Home() {
             <Tab label="Marketheroes" active={activeTab === "Marketheroes"} onTabClick={() => setActiveTab("Marketheroes")} />
             <Tab label="Spacescenes" active={activeTab === "Spacescenes"} onTabClick={() => setActiveTab("Spacescenes")} />
             <Tab label="Hayabusa" active={activeTab === "Hayabusa"} onTabClick={() => setActiveTab("Hayabusa")} />
-            <Tab label="Hayabusa" active={activeTab === "Hayabusa"} onTabClick={() => setActiveTab("Hayabusa")} />
           </div>
         </div>
 
