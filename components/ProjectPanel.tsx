@@ -24,13 +24,11 @@ export default function ProjectPanel({ activeLabel }: { activeLabel: string }) {
   if (!project) return null;
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 px-4 py-8 lg:py-12"
-      style={{paddingLeft: 'clamp(1rem, 5vw, 7rem)', paddingTop: '3rem'}}>
-
-      <div
-        className="w-full flex justify-center lg:block lg:w-[55%]"
-        style={{ marginLeft: "-3rem" }}
-      >
+    <div
+      className="flex flex-col lg:flex-row gap-8 px-4 py-8 lg:py-12"
+      style={{ paddingLeft: "clamp(1rem, 5vw, 7rem)", paddingTop: "3rem" }}
+    >
+      <div className="w-full flex justify-center lg:block lg:w-[55%]">
         <Image
           src={project.image}
           alt={project.label}
@@ -49,12 +47,14 @@ export default function ProjectPanel({ activeLabel }: { activeLabel: string }) {
         </p>
         <div className="flex flex-wrap gap-2">
           {project.stack.map((tech) => (
-            <span key={tech} className="font-mono text-xs text-[#D4A827] border border-[#D4A827] px-3 py-1">
+            <span
+              key={tech}
+              className="font-mono text-xs text-[#D4A827] border border-[#D4A827] px-3 py-1"
+            >
               {tech}
             </span>
           ))}
         </div>
-
         <a
           href={project.url}
           target="_blank"
@@ -64,7 +64,6 @@ export default function ProjectPanel({ activeLabel }: { activeLabel: string }) {
           View Project →
         </a>
       </div>
-
     </div>
   );
 }
