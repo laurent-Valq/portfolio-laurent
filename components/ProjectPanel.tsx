@@ -37,7 +37,7 @@ export default function ProjectPanel({ activeLabel }: { activeLabel: string }) {
   return (
     <div
       className="flex flex-col lg:flex-row gap-8 px-4 py-8 lg:py-12"
-      style={{ paddingLeft: "clamp(1rem, 5vw, 7rem)", paddingTop: "3rem", paddingBottom: "2rem" }}
+      style={{ paddingLeft: "clamp(1rem, 5vw, 7rem)", paddingTop: "3rem", paddingBottom: "3rem" }}
     >
       <div className="w-full flex justify-center lg:block lg:w-[55%]">
         <Image
