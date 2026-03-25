@@ -1,4 +1,5 @@
 // components/ProjectPanel.tsx
+"use client";
 import Image from "next/image";
 
 type Project = {

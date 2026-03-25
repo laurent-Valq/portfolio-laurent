@@ -6,16 +6,7 @@ import Tab from "@/components/Tab";
 import ProjectPanel from "@/components/ProjectPanel";
 
 export default function Home() {
-  const [animating, setAnimating] = useState(false);
   const [activeTab, setActiveTab] = useState("Star Wars Motivator");
-
-  const handleTabClick = (url: string) => {
-    setAnimating(true);
-    setTimeout(() => {
-      window.open(url, "_blank");
-      setAnimating(false);
-    }, 800);
-  };
 
   return (
     <main className="bg-[#d9cbb1] flex flex-col">
@@ -46,8 +37,6 @@ export default function Home() {
         </div>
 
         <ProjectPanel activeLabel={activeTab} />
-
-        {animating && <div className="page-out-animation" />}
       </section>
     </main>
   );
