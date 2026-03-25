@@ -1,5 +1,6 @@
 // components/ProjectPanel.tsx
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 
 type Project = {
@@ -21,8 +22,17 @@ const projects: Project[] = [
 ];
 
 export default function ProjectPanel({ activeLabel }: { activeLabel: string }) {
+  const [animating, setAnimating] = useState(false);
   const project = projects.find((p) => p.label === activeLabel);
   if (!project) return null;
+
+  const handleViewProjectClick = (url: string) => {
+    setAnimating(true);
+    setTimeout(() => {
+      window.open(url, "_blank");
+      setAnimating(false);
+    }, 800);
+  };
 
   return (
     <div
@@ -56,15 +66,15 @@ export default function ProjectPanel({ activeLabel }: { activeLabel: string }) {
             </span>
           ))}
         </div>
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex w-fit items-center gap-2 font-mono text-sm text-[#F2EAD8] border border-[#ffffff33] px-6 py-3 hover:bg-[#2a2a2a] no-underline uppercase tracking-[0.12em]"
+        <button
+          onClick={() => handleViewProjectClick(project.url)}
+          className="inline-flex w-fit items-center gap-2 font-mono text-sm text-[#F2EAD8] border border-[#ffffff33] px-6 py-3 hover:bg-[#2a2a2a] no-underline uppercase tracking-[0.12em] cursor-pointer bg-transparent"
         >
           View Project →
-        </a>
+        </button>
       </div>
+
+      {animating && <div className="page-out-animation" />}
     </div>
   );
 }
